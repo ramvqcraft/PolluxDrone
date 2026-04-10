@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://cfrhyxgrw488v"]
+
+[ext_resource type="PackedScene" uid="uid://c0ybi5nvqkwge" path="res://models/Pollux.gltf" id="1_a202f"]
+[ext_resource type="Script" uid="uid://nhl37n4385gv" path="res://drone2.gd" id="2_noarx"]
+
+[node name="Node3D" type="Node3D" unique_id=324817397]
+script = ExtResource("2_noarx")
+
+[node name="Pollux" parent="." unique_id=2129204542 instance=ExtResource("1_a202f")]
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1956136093]
+transform = Transform3D(0.8419162, 0.35434335, -0.4069618, -0.13252676, 0.866862, 0.48061106, 0.52308106, -0.3507009, 0.776785, -0.6365359, 0.5051129, 0.63400114)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=2029771035]
+transform = Transform3D(1, 0, 0, 0, 0.05867919, 0.9982769, 0, -0.9982769, 0.05867919, 0, 4.0955033, 0.18884087)
