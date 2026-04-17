@@ -1,16 +1,16 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1775798043
+::res://::1776398021
 ddrone.gd::GDScript::151729209846205401::1775794102::0::1::::<>Node3D<><>0<>0<><>::
-drone2.gd::GDScript::927625202908646273::1775797841::0::1::::<>Node3D<><>0<>0<><>::
+drone2.gd::GDScript::927625202908646273::1775798113::0::1::::<>Node3D<><>0<>0<><>::
 drone.gd::GDScript::5958661408864267379::1775795726::0::1::::<>Node3D<><>0<>0<><>::
 export_presets.cfg::TextFile::-1::1775716208::0::1::::<><><>0<>0<><>::
 icon.svg::CompressedTexture2D::7418079300823305913::1775713335::1775713339::1::::<><><>0<>0<>602e96f782c14412d7e3384112bfc805<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-node_3d.tscn::PackedScene::5159349103507323491::1775797841::0::1::::<><><>0<>0<><>::uid://c0ybi5nvqkwge::::res://models/Pollux.gltf<>uid://nhl37n4385gv::::res://drone2.gd
+node_3d.tscn::PackedScene::5159349103507323491::1776398021::0::1::::<><><>0<>0<><>::uid://c0ybi5nvqkwge::::res://models/Pollux.gltf<>uid://nhl37n4385gv::::res://drone2.gd<>uid://wr68vmphn3w0::::res://models/Pool.gltf
 ::res://ExportedApp/::1775716208
 test.apple-touch-icon.png::CompressedTexture2D::628283731854384453::1775716208::1775715194::1::::<><><>0<>0<>78cadba78f07172abbe23d46c9a331f3<>res://.godot/imported/test.apple-touch-icon.png-3bc038819d33870a08ae729f710a1036.ctex::
 test.icon.png::CompressedTexture2D::3051369104424392346::1775716208::1775715194::1::::<><><>0<>0<>22c2166205e9068da0f2a51b821359d1<>res://.godot/imported/test.icon.png-a41162c107e3a588587e4f42edcc8f42.ctex::
 test.png::CompressedTexture2D::5013500172008783401::1775716208::1775715195::1::::<><><>0<>0<>7d18303f98b60cb5338e015f0d803b8f<>res://.godot/imported/test.png-07bf8c5e8202926b78207a1728697c5d.ctex::
-::res://models/::1775714377
+::res://models/::1776403637
 Aka.gltf::PackedScene::4222668990961284340::1775361698::1775713354::1::::<><><>0<>0<>f2a249d1a3f6acff075c14f4a2a58253<>res://.godot/imported/Aka.gltf-3f62c8a65470b45dae12169e3bcf619f.scn::
 AkaHinge.gltf::PackedScene::1657785875559659270::1775359772::1775713354::1::::<><><>0<>0<>c87f32ee9fcb85b6535810e872c14ca6<>res://.godot/imported/AkaHinge.gltf-b4869eaf7b909ffda1dcf4dd687a2db9.scn::
 ControlHandleBar.gltf::PackedScene::7057304590724335991::1775360781::1775713354::1::::<><><>0<>0<>e3a204130fb1f450417e64394aff5f51<>res://.godot/imported/ControlHandleBar.gltf-4c7064ccbafa6e2bfa13e78217666bea.scn::
@@ -19,6 +19,7 @@ Pollux.gltf::PackedScene::6577184124537357656::1775713045::1775714377::1::::<><>
 PolluxForeBody.gltf::PackedScene::5069861282826478314::1775359284::1775713354::1::::<><><>0<>0<>25c65f731f3d201244c3317acd7b68f0<>res://.godot/imported/PolluxForeBody.gltf-1b00a94496d15a83b777e7009821bbe4.scn::
 PolluxMidBody_Lower.gltf::PackedScene::4413135234390976833::1775359699::1775713354::1::::<><><>0<>0<>4da452b5be1fddb993f96ba45d298491<>res://.godot/imported/PolluxMidBody_Lower.gltf-b40f259d6775cc466df431f63e97dcc4.scn::
 PolluxMidBody_Upper.gltf::PackedScene::2986272160430189035::1775360438::1775713354::1::::<><><>0<>0<>e733607402b71617b4ab8dcda6e3cb94<>res://.godot/imported/PolluxMidBody_Upper.gltf-44f24cb82470e9e9fa1b7461f47f671e.scn::
+Pool.gltf::PackedScene::1581191262049786413::1776397105::1776397803::1::::<><><>0<>0<>e3515a7b216616ac13640ddc1ff15927<>res://.godot/imported/Pool.gltf-08106ccf97a9239d237704b99eb65148.scn::
 RearBody.gltf::PackedScene::1033370296496819856::1775360923::1775713354::1::::<><><>0<>0<>3b29c15f432a512585ca7f74e6d23970<>res://.godot/imported/RearBody.gltf-8e02100f29ebf7823cb769d4286131af.scn::
 SensorBracketA.gltf::PackedScene::3795487522407289552::1775365965::1775713354::1::::<><><>0<>0<>a3e37ed8982f0924d5cb8e384d009d7d<>res://.godot/imported/SensorBracketA.gltf-b51770b59de1b6bf1f195ca0c50afd30.scn::
 SensorBracketB.gltf::PackedScene::4894107167981219085::1775365974::1775713354::1::::<><><>0<>0<>7871d268b1f1cbf625b61176a21d7f89<>res://.godot/imported/SensorBracketB.gltf-2697e65d4db1ec7754be9fe2648945c3.scn::
@@ -26,3 +27,4 @@ SensorBracketC.gltf::PackedScene::5636290484029226694::1775365981::1775713354::1
 SensorCamera.gltf::PackedScene::1893637427590008236::1775365906::1775713355::1::::<><><>0<>0<>7f0c995d9643a08031a0cf122c752198<>res://.godot/imported/SensorCamera.gltf-b7af25e8f62a3050e25fddec609a42f3.scn::
 Thruster_U2.gltf::PackedScene::8719268738432150936::1775362355::1775713355::1::::<><><>0<>0<>10e4a6edaad35ce3ec1b423f9bc73fc4<>res://.godot/imported/Thruster_U2.gltf-2c633588e1f7d47ca6f4251be8a5e87d.scn::
 Thruster_U92.gltf::PackedScene::7907532608713747328::1775362342::1775713355::1::::<><><>0<>0<>3ea276455ca8af373bf71034a41aefbb<>res://.godot/imported/Thruster_U92.gltf-baca368d44ba259158095b111d0568b6.scn::
+World.gltf::PackedScene::9039469075496363161::1776403606::1776403644::1::::<><><>0<>0<>ab405ef57ba35bfae0f3df0e27c6e42e<>res://.godot/imported/World.gltf-762c096c1f8bd71e22f93bc2d3d83b9c.scn::
