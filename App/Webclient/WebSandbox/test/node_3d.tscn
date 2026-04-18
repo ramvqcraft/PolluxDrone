@@ -1,20 +1,20 @@
 [gd_scene format=3 uid="uid://cfrhyxgrw488v"]
 
-[ext_resource type="PackedScene" uid="uid://c0ybi5nvqkwge" path="res://models/Pollux.gltf" id="1_a202f"]
+[ext_resource type="PackedScene" uid="uid://h61ftno7ho0y" path="res://models/Pollux.gltf" id="1_a202f"]
 [ext_resource type="Script" uid="uid://nhl37n4385gv" path="res://drone2.gd" id="2_noarx"]
 [ext_resource type="PackedScene" uid="uid://d111y8wchn1er" path="res://models/World.gltf" id="3_a0tk4"]
 
 [node name="Node3D" type="Node3D" unique_id=324817397]
 script = ExtResource("2_noarx")
 
-[node name="Pollux" parent="." unique_id=2129204542 instance=ExtResource("1_a202f")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.968789, 0)
-
-[node name="Camera3D" type="Camera3D" parent="." unique_id=1956136093]
-transform = Transform3D(0.44735435, 0.4850039, -0.7514289, -0.13252676, 0.86686194, 0.4806111, 0.88448334, -0.115419015, 0.4520705, -5.162752, 6.699563, 2.2744446)
-fov = 48.052753
+[node name="World" parent="." unique_id=300444714 instance=ExtResource("3_a0tk4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.99244547, 0)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=2029771035]
 transform = Transform3D(1, 0, 0, 0, 0.05867919, 0.9982769, 0, -0.9982769, 0.05867919, 0, 24.352093, 0.18884087)
 
-[node name="World" parent="." unique_id=1300892101 instance=ExtResource("3_a0tk4")]
+[node name="Pollux" parent="." unique_id=47708796 instance=ExtResource("1_a202f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.9329314, 0)
+
+[node name="Camera3D" type="Camera3D" parent="Pollux" unique_id=140775696]
+transform = Transform3D(-1, -1.5285484e-14, -8.742278e-08, -5.040204e-08, 0.8170746, 0.576532, 7.143092e-08, 0.576532, -0.8170746, 0.4065857, 0.21321154, -0.7151835)
