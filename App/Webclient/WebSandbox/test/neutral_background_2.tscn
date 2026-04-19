@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://hjfgi4tva43n"]
+
+[ext_resource type="PackedScene" uid="uid://mlbaqkoefvq3" path="res://models/NeutralBackground.gltf" id="1_urihd"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_urihd"]
+metallic = 0.8
+roughness = 0.13
+emission = Color(0.9340804, 0.9340805, 0.93408036, 1)
+
+[node name="NeutralBackground2" unique_id=1561496364 instance=ExtResource("1_urihd")]
+
+[node name="Floor" parent="NeutralBackground" parent_id_path=PackedInt32Array(402610395) index="1" unique_id=265927236]
+surface_material_override/0 = SubResource("StandardMaterial3D_urihd")

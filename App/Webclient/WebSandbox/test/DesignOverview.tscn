@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://86letw4558fb"]
+
+[ext_resource type="Script" uid="uid://ccc23bl8bm0v" path="res://drone3.gd" id="1_rpybc"]
+[ext_resource type="PackedScene" uid="uid://hjfgi4tva43n" path="res://neutral_background_2.tscn" id="2_rpybc"]
+[ext_resource type="PackedScene" uid="uid://h61ftno7ho0y" path="res://models/Pollux.gltf" id="3_2or6r"]
+
+[node name="Node3D" type="Node3D" unique_id=324817397]
+script = ExtResource("1_rpybc")
+
+[node name="NeutralBackground2" parent="." unique_id=1561496364 instance=ExtResource("2_rpybc")]
+
+[node name="Pollux" parent="." unique_id=47708796 instance=ExtResource("3_2or6r")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.267271, 0.979033, -4.811754)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=120062881]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.1434293, 6.185768, -5.0670652)
+light_energy = 16.0
+shadow_enabled = true
+distance_fade_begin = 15.0
+distance_fade_shadow = 15.0
+omni_range = 11.353
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=290796044]
+transform = Transform3D(-0.0011170345, 0, 0.9999994, 0, 1, 0, -0.9999994, 0, -0.0011170345, 5.725791, 0.5609963, -4.8142266)
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=2119686802]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.7154956, 0.3635664, -3.5419407)

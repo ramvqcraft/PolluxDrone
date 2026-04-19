@@ -1,2 +1,6 @@
-res://node_3d.tscn
 res://drone2.gd
+res://DesignOverview.tscn
+res://drone3.gd
+res://neutral_background_2.tscn
+res://shared.gd
+res://constants.gd
