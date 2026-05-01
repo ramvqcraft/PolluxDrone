@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://bsbgojtcticy6"]
+
+[ext_resource type="PackedScene" uid="uid://b0glc2hcocf7u" path="res://models/BeachBackground.gltf" id="1_buc6d"]
+[ext_resource type="PackedScene" uid="uid://12mfmilmclrq" path="res://models/PalmTree.gltf" id="2_6tylr"]
+[ext_resource type="PackedScene" uid="uid://btd5kjlnab640" path="res://models/Bouy.gltf" id="2_nk4s2"]
+
+[node name="Node3D" type="Node3D" unique_id=1710347843]
+
+[node name="BeachBackground" parent="." unique_id=1239726475 instance=ExtResource("1_buc6d")]
+
+[node name="Bouy" parent="BeachBackground" unique_id=23979941 instance=ExtResource("2_nk4s2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.921738, 4.7945285, -43.54143)
+
+[node name="Bouy2" parent="BeachBackground" unique_id=1475162691 instance=ExtResource("2_nk4s2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36.380005, 4.8164363, 43.254974)
+
+[node name="PalmTree2" parent="BeachBackground" unique_id=1162992187 instance=ExtResource("2_6tylr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -74.89049, 7.0605392, 44.637154)
+
+[node name="PalmTree3" parent="BeachBackground" unique_id=941363130 instance=ExtResource("2_6tylr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -75.798935, 7.121456, 0)
+
+[node name="PalmTree4" parent="BeachBackground" unique_id=708199891 instance=ExtResource("2_6tylr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -75.94127, 7.104623, -25.476866)
+
+[node name="PalmTree5" parent="BeachBackground" unique_id=1854084272 instance=ExtResource("2_6tylr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -75.92978, 6.9552956, 27.482048)
+
+[node name="PalmTree6" parent="BeachBackground" unique_id=68363115 instance=ExtResource("2_6tylr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -75.646454, 7.086529, -42.781326)
+
+[node name="Bouy3" parent="BeachBackground" unique_id=1920236759 instance=ExtResource("2_nk4s2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 44.114338, 4.7600784, 0)
