@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://b0glc2hcocf7u" path="res://models/BeachBackground.gltf" id="1_buc6d"]
 [ext_resource type="PackedScene" uid="uid://12mfmilmclrq" path="res://models/PalmTree.gltf" id="2_6tylr"]
 [ext_resource type="PackedScene" uid="uid://btd5kjlnab640" path="res://models/Bouy.gltf" id="2_nk4s2"]
+[ext_resource type="PackedScene" uid="uid://bpywl42vdv6o4" path="res://models/Human.gltf" id="4_nk4s2"]
 
 [node name="Node3D" type="Node3D" unique_id=1710347843]
 
@@ -31,3 +32,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -75.646454, 7.086529, -42.781
 
 [node name="Bouy3" parent="BeachBackground" unique_id=1920236759 instance=ExtResource("2_nk4s2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 44.114338, 4.7600784, 0)
+
+[node name="Tom" parent="." unique_id=1401723410 instance=ExtResource("4_nk4s2")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -51.898724, 5.8971415, 0)

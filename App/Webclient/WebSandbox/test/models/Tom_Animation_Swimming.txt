@@ -1,0 +1,372 @@
+#read angles
+Torso = App.ActiveDocument.getObject('Torso')
+print(Torso.Placement.Rotation.toEuler())
+
+#set angles
+Torso.Placement.Rotation = FreeCAD.Rotation(FreeCAD.Vector(1,0,0), 90)
+
+
+C:\Users\RamVQ\Documents\Pollux\PolluxDrone\Modeling
+
+C:\Program Files\FreeCAD 0.20\bin\FreeCADCmd.exe ExportAngles.py 
+==============================================
+def get_by_label(label):
+    objs = App.ActiveDocument.Objects
+    for obj in objs:
+        if obj.Label == label:
+            return obj
+    return None
+
+# Example usage:
+torso = get_by_label("Torso")
+if torso:
+    print("Torso angles:", torso.Placement.Rotation.toEuler())
+else:
+    print("No object with that label found")
+
+
+================================================
+
+Torso = App.ActiveDocument.getObject('Part003')
+print(Torso.Placement.Rotation.toEuler())
+
+Human = App.ActiveDocument.getObject('Human')
+print(Human.Placement.Rotation.toEuler())
+Human.Placement.Rotation = FreeCAD.Rotation(FreeCAD.Vector(1,0,0), 90)
+
+
+
+
+=================================================
+
+Part002 Human
+Origin029 Origin029
+X_Axis029 X_Axis029
+Y_Axis029 Y_Axis029
+Z_Axis029 Z_Axis029
+XY_Plane029 XY_Plane029
+XZ_Plane029 XZ_Plane029
+YZ_Plane029 YZ_Plane029
+Part003 Torso
+Origin032 Origin032
+X_Axis032 X_Axis032
+Y_Axis032 Y_Axis032
+Z_Axis032 Z_Axis032
+XY_Plane032 XY_Plane032
+XZ_Plane032 XZ_Plane032
+YZ_Plane032 YZ_Plane032
+Part004 RA
+Origin033 Origin033
+X_Axis033 X_Axis033
+Y_Axis033 Y_Axis033
+Z_Axis033 Z_Axis033
+XY_Plane033 XY_Plane033
+XZ_Plane033 XZ_Plane033
+YZ_Plane033 YZ_Plane033
+Body007 RL_UP_Mass
+Origin037 Origin037
+X_Axis037 X_Axis037
+Y_Axis037 Y_Axis037
+Z_Axis037 Z_Axis037
+XY_Plane037 XY_Plane037
+XZ_Plane037 XZ_Plane037
+YZ_Plane037 YZ_Plane037
+Sketch008 Sketch008
+Pad006 Pad006
+Body008 RL_LW_Mass
+Origin038 Origin038
+X_Axis038 X_Axis038
+Y_Axis038 Y_Axis038
+Z_Axis038 Z_Axis038
+XY_Plane038 XY_Plane038
+XZ_Plane038 XZ_Plane038
+YZ_Plane038 YZ_Plane038
+Sketch009 Sketch009
+Pad007 Pad007
+Body009 RL_F_Mass
+Origin039 Origin039
+X_Axis039 X_Axis039
+Y_Axis039 Y_Axis039
+Z_Axis039 Z_Axis039
+XY_Plane039 XY_Plane039
+XZ_Plane039 XZ_Plane039
+YZ_Plane039 YZ_Plane039
+Sketch010 Sketch010
+Pad008 Pad008
+Body011 RA_UP_Mass
+Origin042 Origin042
+X_Axis042 X_Axis042
+Y_Axis042 Y_Axis042
+Z_Axis042 Z_Axis042
+XY_Plane042 XY_Plane042
+XZ_Plane042 XZ_Plane042
+YZ_Plane042 YZ_Plane042
+Sketch012 Sketch012
+Pad010 Pad010
+Body012 RA_LW_Mass
+Origin043 Origin043
+X_Axis043 X_Axis043
+Y_Axis043 Y_Axis043
+Z_Axis043 Z_Axis043
+XY_Plane043 XY_Plane043
+XZ_Plane043 XZ_Plane043
+YZ_Plane043 YZ_Plane043
+Sketch013 Sketch013
+Pad011 Pad011
+Body013 RA_WR_Mass
+Origin044 Origin044
+X_Axis044 X_Axis044
+Y_Axis044 Y_Axis044
+Z_Axis044 Z_Axis044
+XY_Plane044 XY_Plane044
+XZ_Plane044 XZ_Plane044
+YZ_Plane044 YZ_Plane044
+Sketch014 Sketch014
+X_Axis036 X_Axis036
+YZ_Plane036 YZ_Plane036
+Y_Axis036 Y_Axis036
+XY_Plane036 XY_Plane036
+Z_Axis036 Z_Axis036
+XZ_Plane036 XZ_Plane036
+Origin036 Origin036
+Part005 RL
+Pad012 Pad012
+Body014 RA_H_Mass
+Origin045 Origin045
+X_Axis045 X_Axis045
+Y_Axis045 Y_Axis045
+Z_Axis045 Z_Axis045
+XY_Plane045 XY_Plane045
+XZ_Plane045 XZ_Plane045
+YZ_Plane045 YZ_Plane045
+Sketch015 Sketch015
+Pad013 Pad013
+Body015 Torso_Mass
+Origin046 Origin046
+X_Axis046 X_Axis046
+Y_Axis046 Y_Axis046
+Z_Axis046 Z_Axis046
+XY_Plane046 XY_Plane046
+XZ_Plane046 XZ_Plane046
+YZ_Plane046 YZ_Plane046
+Sketch016 Sketch016
+Pad014 Pad014
+Sketch017 Sketch017
+Pocket Pocket
+Sketch018 Sketch018
+Pocket001 Pocket001
+Part006 RL_UP
+Origin047 Origin047
+X_Axis047 X_Axis047
+Y_Axis047 Y_Axis047
+Z_Axis047 Z_Axis047
+XY_Plane047 XY_Plane047
+XZ_Plane047 XZ_Plane047
+YZ_Plane047 YZ_Plane047
+Part007 RL_LW
+Origin048 Origin048
+X_Axis048 X_Axis048
+Y_Axis048 Y_Axis048
+Z_Axis048 Z_Axis048
+XY_Plane048 XY_Plane048
+XZ_Plane048 XZ_Plane048
+YZ_Plane048 YZ_Plane048
+Part008 RL_F
+Origin049 Origin049
+X_Axis049 X_Axis049
+Y_Axis049 Y_Axis049
+Z_Axis049 Z_Axis049
+XY_Plane049 XY_Plane049
+XZ_Plane049 XZ_Plane049
+YZ_Plane049 YZ_Plane049
+Part009 RA_UP
+Origin050 Origin050
+X_Axis050 X_Axis050
+Y_Axis050 Y_Axis050
+Z_Axis050 Z_Axis050
+XY_Plane050 XY_Plane050
+XZ_Plane050 XZ_Plane050
+YZ_Plane050 YZ_Plane050
+Part010 RA_LW
+Origin051 Origin051
+X_Axis051 X_Axis051
+Y_Axis051 Y_Axis051
+Z_Axis051 Z_Axis051
+XY_Plane051 XY_Plane051
+XZ_Plane051 XZ_Plane051
+YZ_Plane051 YZ_Plane051
+Part011 RA_H
+Origin052 Origin052
+X_Axis052 X_Axis052
+Y_Axis052 Y_Axis052
+Z_Axis052 Z_Axis052
+XY_Plane052 XY_Plane052
+XZ_Plane052 XZ_Plane052
+YZ_Plane052 YZ_Plane052
+Part012 Head
+Origin053 Origin053
+X_Axis053 X_Axis053
+Y_Axis053 Y_Axis053
+Z_Axis053 Z_Axis053
+XY_Plane053 XY_Plane053
+XZ_Plane053 XZ_Plane053
+YZ_Plane053 YZ_Plane053
+Sketch019 Sketch019
+Pocket002 Pocket002
+Sketch020 Sketch020
+Pad015 Pad015
+Body016 Body016
+Origin054 Origin054
+X_Axis054 X_Axis054
+Y_Axis054 Y_Axis054
+Z_Axis054 Z_Axis054
+XY_Plane054 XY_Plane054
+XZ_Plane054 XZ_Plane054
+YZ_Plane054 YZ_Plane054
+Sketch021 Sketch021
+Pad016 Pad016
+Body017 Body017
+Origin055 Origin055
+X_Axis055 X_Axis055
+Y_Axis055 Y_Axis055
+Z_Axis055 Z_Axis055
+XY_Plane055 XY_Plane055
+XZ_Plane055 XZ_Plane055
+YZ_Plane055 YZ_Plane055
+Sketch022 Sketch022
+Pad017 Pad017
+Common003 Head_Mass
+Body018 LA_UP_Mass
+Body019 LA_LW_Mass
+Body020 LA_WR_Mass
+Body021 LA_H_Mass
+Origin056 Origin056
+Origin057 Origin057
+Origin058 Origin058
+Origin059 Origin059
+Origin060 Origin060
+Origin061 Origin061
+Origin062 Origin062
+Origin063 Origin063
+Pad018 Pad018
+Pad019 Pad019
+Pad020 Pad020
+Pad021 Pad021
+Part013 LA
+Part014 LA_UP
+Part015 LA_LW
+Part016 LA_H
+Sketch023 Sketch023
+Sketch024 Sketch024
+Sketch025 Sketch025
+Sketch026 Sketch026
+XY_Plane056 XY_Plane056
+XY_Plane057 XY_Plane057
+XY_Plane058 XY_Plane058
+XY_Plane059 XY_Plane059
+XY_Plane060 XY_Plane060
+XY_Plane061 XY_Plane061
+XY_Plane062 XY_Plane062
+XY_Plane063 XY_Plane063
+XZ_Plane056 XZ_Plane056
+XZ_Plane057 XZ_Plane057
+XZ_Plane058 XZ_Plane058
+XZ_Plane059 XZ_Plane059
+XZ_Plane060 XZ_Plane060
+XZ_Plane061 XZ_Plane061
+XZ_Plane062 XZ_Plane062
+XZ_Plane063 XZ_Plane063
+X_Axis056 X_Axis056
+X_Axis057 X_Axis057
+X_Axis058 X_Axis058
+X_Axis059 X_Axis059
+X_Axis060 X_Axis060
+X_Axis061 X_Axis061
+X_Axis062 X_Axis062
+X_Axis063 X_Axis063
+YZ_Plane056 YZ_Plane056
+YZ_Plane057 YZ_Plane057
+YZ_Plane058 YZ_Plane058
+YZ_Plane059 YZ_Plane059
+YZ_Plane060 YZ_Plane060
+YZ_Plane061 YZ_Plane061
+YZ_Plane062 YZ_Plane062
+YZ_Plane063 YZ_Plane063
+Y_Axis056 Y_Axis056
+Y_Axis057 Y_Axis057
+Y_Axis058 Y_Axis058
+Y_Axis059 Y_Axis059
+Y_Axis060 Y_Axis060
+Y_Axis061 Y_Axis061
+Y_Axis062 Y_Axis062
+Y_Axis063 Y_Axis063
+Z_Axis056 Z_Axis056
+Z_Axis057 Z_Axis057
+Z_Axis058 Z_Axis058
+Z_Axis059 Z_Axis059
+Z_Axis060 Z_Axis060
+Z_Axis061 Z_Axis061
+Z_Axis062 Z_Axis062
+Z_Axis063 Z_Axis063
+Body022 LL_UP_Mass
+Body023 LL_LW_Mass
+Body024 LL_F_Mass
+Origin064 Origin064
+Origin065 Origin065
+Origin066 Origin066
+Origin067 Origin067
+Origin068 Origin068
+Origin069 Origin069
+Origin070 Origin070
+Pad022 Pad022
+Pad023 Pad023
+Pad024 Pad024
+Part017 LL
+Part018 LL_UP
+Part019 LL_LW
+Part020 LL_F
+Sketch027 Sketch027
+Sketch028 Sketch028
+Sketch029 Sketch029
+XY_Plane064 XY_Plane064
+XY_Plane065 XY_Plane065
+XY_Plane066 XY_Plane066
+XY_Plane067 XY_Plane067
+XY_Plane068 XY_Plane068
+XY_Plane069 XY_Plane069
+XY_Plane070 XY_Plane070
+XZ_Plane064 XZ_Plane064
+XZ_Plane065 XZ_Plane065
+XZ_Plane066 XZ_Plane066
+XZ_Plane067 XZ_Plane067
+XZ_Plane068 XZ_Plane068
+XZ_Plane069 XZ_Plane069
+XZ_Plane070 XZ_Plane070
+X_Axis064 X_Axis064
+X_Axis065 X_Axis065
+X_Axis066 X_Axis066
+X_Axis067 X_Axis067
+X_Axis068 X_Axis068
+X_Axis069 X_Axis069
+X_Axis070 X_Axis070
+YZ_Plane064 YZ_Plane064
+YZ_Plane065 YZ_Plane065
+YZ_Plane066 YZ_Plane066
+YZ_Plane067 YZ_Plane067
+YZ_Plane068 YZ_Plane068
+YZ_Plane069 YZ_Plane069
+YZ_Plane070 YZ_Plane070
+Y_Axis064 Y_Axis064
+Y_Axis065 Y_Axis065
+Y_Axis066 Y_Axis066
+Y_Axis067 Y_Axis067
+Y_Axis068 Y_Axis068
+Y_Axis069 Y_Axis069
+Y_Axis070 Y_Axis070
+Z_Axis064 Z_Axis064
+Z_Axis065 Z_Axis065
+Z_Axis066 Z_Axis066
+Z_Axis067 Z_Axis067
+Z_Axis068 Z_Axis068
+Z_Axis069 Z_Axis069
+Z_Axis070 Z_Axis070

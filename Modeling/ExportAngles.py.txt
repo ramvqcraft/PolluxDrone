@@ -1,0 +1,34 @@
+import csv
+import FreeCAD
+doc = FreeCAD.open("C:\\Users\\RamVQ\\Documents\\Pollux\\PolluxDrone\\Modeling\\_temp.Humanoid.FCStd")
+
+
+labels = ["Torso", "Head", "RA", "LA", "RL", "LL"]
+
+# Open CSV file
+with open("AnglesOuput.csv", "w", newline="") as f:
+    writer = csv.writer(f)
+    
+    # Build header: step + each label with X,Y,Z
+    header = ["step"]
+    for label in labels:
+        header += [f"{label}X", f"{label}Y", f"{label}Z"]
+    writer.writerow(header)
+    
+    # Example: loop through steps (replace with your own logic)
+    for step in range(2):  # here just 2 steps for demo
+        row = [step]
+        for label in labels:
+            obj = None
+            for o in App.ActiveDocument.Objects:
+                if o.Label == label:
+                    obj = o
+                    break
+            if obj:
+                euler = obj.Placement.Rotation.toEuler()
+                row += [euler[0], euler[1], euler[2]]
+            else:
+                row += ["", "", ""]
+        writer.writerow(row)
+
+doc.close()
