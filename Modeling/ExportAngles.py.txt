@@ -1,34 +1,62 @@
+#Script to export joints angles from a FreeCAD design to a CSV style file, from the command line.
+#Uses the utility FreeCADCmd.exe which is actually a python wrapper.
+#Usage:
+#adjust variables labels, doc, csv_path
+#cd 'C:\Program Files\FreeCAD 0.20\bin>'
+#.\FreeCADCmd.exe C:\Users\RamVQ\Documents\Pollux\PolluxDrone\Modeling\ExportAngles.fcscript
+
 import csv
+import os
 import FreeCAD
-doc = FreeCAD.open("C:\\Users\\RamVQ\\Documents\\Pollux\\PolluxDrone\\Modeling\\_temp.Humanoid.FCStd")
 
+labels = ["Human","Torso", "Head", "RA", "LA", "RL", "LL"]
+threshold = 10.0
+use_threshold = False
+granularity = 5
 
-labels = ["Torso", "Head", "RA", "LA", "RL", "LL"]
+def angles_changed(last, current, threshold):
+    for i in range(len(last)):
+        if isinstance(current[i], (int, float)) and isinstance(last[i], (int, float)):
+            if abs(current[i] - last[i]) > threshold:
+                return True
+    return False
 
-# Open CSV file
-with open("AnglesOuput.csv", "w", newline="") as f:
-    writer = csv.writer(f)
-    
-    # Build header: step + each label with X,Y,Z
-    header = ["step"]
-    for label in labels:
-        header += [f"{label}X", f"{label}Y", f"{label}Z"]
-    writer.writerow(header)
-    
-    # Example: loop through steps (replace with your own logic)
-    for step in range(2):  # here just 2 steps for demo
+def round_angle(value):
+    return round(value / granularity) * granularity
+
+def export_angles():
+    doc = FreeCAD.open(r"C:\Users\RamVQ\Documents\Pollux\PolluxDrone\Modeling\_temp.Humanoid3.FCStd")
+    csv_path = "AnglesOutput.csv"
+
+    line_count = 0
+    if os.path.exists(csv_path):
+        with open(csv_path, "r") as f:
+            line_count = sum(1 for _ in f)
+
+    with open(csv_path, "a", newline="") as f:
+        writer = csv.writer(f)
+        if line_count == 0:
+            header = ["step"]
+            for label in labels:
+                header += [f"{label}X", f"{label}Y", f"{label}Z"]
+            writer.writerow(header)
+
+        step = line_count
         row = [step]
+        current_angles = []
         for label in labels:
-            obj = None
-            for o in App.ActiveDocument.Objects:
-                if o.Label == label:
-                    obj = o
-                    break
+            obj = next((o for o in doc.Objects if o.Label == label), None)
             if obj:
                 euler = obj.Placement.Rotation.toEuler()
-                row += [euler[0], euler[1], euler[2]]
+                current_angles += [round_angle(euler[0]), round_angle(euler[1]), round_angle(euler[2])]
             else:
-                row += ["", "", ""]
-        writer.writerow(row)
+                current_angles += ["", "", ""]
+        if not use_threshold or line_count == 0 or angles_changed([], current_angles, threshold):
+            row += current_angles
+            writer.writerow(row)
 
-doc.close()
+    App.closeDocument(doc.Name)
+
+# 🔹 Prevent double execution
+if __name__ == "__main__":
+    export_angles()
