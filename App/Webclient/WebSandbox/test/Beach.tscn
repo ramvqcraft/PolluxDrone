@@ -1,8 +1,7 @@
 [gd_scene format=3 uid="uid://bsbgojtcticy6"]
 
 [ext_resource type="PackedScene" uid="uid://b0glc2hcocf7u" path="res://models/BeachBackground.gltf" id="1_buc6d"]
-[ext_resource type="PackedScene" uid="uid://12mfmilmclrq" path="res://models/PalmTree.gltf" id="2_6tylr"]
-[ext_resource type="PackedScene" uid="uid://btd5kjlnab640" path="res://models/Bouy.gltf" id="2_nk4s2"]
+[ext_resource type="Script" uid="uid://c5hmbpvty23bf" path="res://beach.gd" id="3_ocgqa"]
 [ext_resource type="PackedScene" uid="uid://bpywl42vdv6o4" path="res://models/Human.gltf" id="4_nk4s2"]
 [ext_resource type="PackedScene" uid="uid://h61ftno7ho0y" path="res://models/Pollux.gltf" id="5_mpcv5"]
 [ext_resource type="Script" uid="uid://ccc23bl8bm0v" path="res://drone3.gd" id="6_mpcv5"]
@@ -11,30 +10,8 @@
 script = ExtResource("6_mpcv5")
 
 [node name="BeachBackground" parent="." unique_id=1239726475 instance=ExtResource("1_buc6d")]
-
-[node name="Bouy" parent="BeachBackground" unique_id=23979941 instance=ExtResource("2_nk4s2")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.921738, 4.7945285, -43.54143)
-
-[node name="Bouy2" parent="BeachBackground" unique_id=1475162691 instance=ExtResource("2_nk4s2")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36.380005, 4.8164363, 43.254974)
-
-[node name="PalmTree2" parent="BeachBackground" unique_id=1162992187 instance=ExtResource("2_6tylr")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -74.89049, 7.0605392, 44.637154)
-
-[node name="PalmTree3" parent="BeachBackground" unique_id=941363130 instance=ExtResource("2_6tylr")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -75.798935, 7.121456, 0)
-
-[node name="PalmTree4" parent="BeachBackground" unique_id=708199891 instance=ExtResource("2_6tylr")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -75.94127, 7.104623, -25.476866)
-
-[node name="PalmTree5" parent="BeachBackground" unique_id=1854084272 instance=ExtResource("2_6tylr")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -75.92978, 6.9552956, 27.482048)
-
-[node name="PalmTree6" parent="BeachBackground" unique_id=68363115 instance=ExtResource("2_6tylr")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -75.646454, 7.086529, -42.781326)
-
-[node name="Bouy3" parent="BeachBackground" unique_id=1920236759 instance=ExtResource("2_nk4s2")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 44.114338, 4.7600784, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.07154846, 0, -0.09592819)
+script = ExtResource("3_ocgqa")
 
 [node name="Tom" parent="." unique_id=1401723410 instance=ExtResource("4_nk4s2")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -51.898724, 5.8971415, 0)
@@ -48,7 +25,7 @@ transform = Transform3D(-4.371139e-08, -8.742278e-08, -1, -8.742278e-08, 1, -8.7
 transform = Transform3D(-1, 1.7484554e-07, -8.7422805e-08, 1.7484555e-07, 1, -1.7484555e-07, 8.742278e-08, -1.7484557e-07, -1, -0.42107624, 0.53060675, -1.1006584)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1961067350]
-transform = Transform3D(2.3283067e-10, -1, -2.682207e-07, -0.008464756, -2.6821306e-07, 0.9999642, -0.9999642, 2.0376005e-09, -0.008464756, -4.343053, 28.347412, 0.13841772)
+transform = Transform3D(2.3283067e-10, -1, -2.682207e-07, -0.008464756, -2.6821306e-07, 0.9999642, -0.9999642, 2.0376005e-09, -0.008464756, 0.012412071, 28.347412, -0.016380072)
 light_energy = 16.0
 light_indirect_energy = 12.295
 light_volumetric_fog_energy = 6.895

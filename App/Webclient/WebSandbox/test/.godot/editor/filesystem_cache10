@@ -1,6 +1,6 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1778133848
-Beach.tscn::PackedScene::3652274052181025095::1778133780::0::1::::<><><>0<>0<><>::uid://b0glc2hcocf7u::::res://models/BeachBackground.gltf<>uid://12mfmilmclrq::::res://models/PalmTree.gltf<>uid://btd5kjlnab640::::res://models/Bouy.gltf<>uid://bpywl42vdv6o4::::res://models/Human.gltf<>uid://h61ftno7ho0y::::res://models/Pollux.gltf<>uid://ccc23bl8bm0v::::res://drone3.gd
+::res://::1779516963
+Beach.tscn::PackedScene::3652274052181025095::1779516963::0::1::::<><><>0<>0<><>::uid://b0glc2hcocf7u::::res://models/BeachBackground.gltf<>uid://bpywl42vdv6o4::::res://models/Human.gltf<>uid://h61ftno7ho0y::::res://models/Pollux.gltf<>uid://ccc23bl8bm0v::::res://drone3.gd
 constants.gd::GDScript::8382793901657631871::1776922765::0::1::::<>Resource<><>0<>0<><>::
 ddrone.gd::GDScript::151729209846205401::1775794102::0::1::::<>Node3D<><>0<>0<><>::
 DesignOverview.tscn::PackedScene::2380903613815257119::1776924713::0::1::::<><><>0<>0<><>::uid://ccc23bl8bm0v::::res://drone3.gd<>uid://hjfgi4tva43n::::res://neutral_background_2.tscn<>uid://h61ftno7ho0y::::res://models/Pollux.gltf
@@ -12,6 +12,7 @@ FreeMode.tscn::PackedScene::4180541469521677627::1776916490::0::1::::<><><>0<>0<
 icon.svg::CompressedTexture2D::7418079300823305913::1775713335::1775713339::1::::<><><>0<>0<>602e96f782c14412d7e3384112bfc805<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 neutral_background_2.tscn::PackedScene::510216070857526185::1776581309::0::1::::<><><>0<>0<><>::uid://mlbaqkoefvq3::::res://models/NeutralBackground.gltf
 node_3d.tscn::PackedScene::5159349103507323491::1776491818::0::1::::<><><>0<>0<><>::uid://h61ftno7ho0y::::res://models/Pollux.gltf<>uid://nhl37n4385gv::::res://drone2.gd<>uid://d111y8wchn1er::::res://models/World.gltf
+beach.gd::GDScript::6893688531700278159::1779516963::0::1::::<>Node3D<><>0<>0<><>::
 shared.gd::GDScript::379689084446476123::1776924713::0::1::::<>Resource<><>0<>0<><>::
 ::res://ExportedApp/::1775716208
 test.apple-touch-icon.png::CompressedTexture2D::628283731854384453::1775716208::1775715194::1::::<><><>0<>0<>78cadba78f07172abbe23d46c9a331f3<>res://.godot/imported/test.apple-touch-icon.png-3bc038819d33870a08ae729f710a1036.ctex::
@@ -26,3 +27,6 @@ PalmTree.gltf::PackedScene::1881386309985732654::1777609015::1777609131::1::::<>
 Pollux.gltf::PackedScene::556906205328793306::1776489564::1776489565::1::::<><><>0<>0<>2de6baa736028e7a77df09502a078190<>res://.godot/imported/Pollux.gltf-a82acf7305753f6730e2116aa33a2b5d.scn::
 Tom_Animation_Swimming.txt::TextFile::-1::1777792190::0::1::::<><><>0<>0<><>::
 World.gltf::PackedScene::9039469075496363161::1776491748::1776491751::1::::<><><>0<>0<>ab405ef57ba35bfae0f3df0e27c6e42e<>res://.godot/imported/World.gltf-762c096c1f8bd71e22f93bc2d3d83b9c.scn::
+::res://textures/::1779517720
+sand.jpg::CompressedTexture2D::8417400414667556200::1779517697::1779517746::1::::<><><>0<>0<>a66cb66e6a4300270b837951197ebe44<>res://.godot/imported/sand.jpg-d56551c6e463d141e9a32b6f8ec96dbc.ctex::
+water-body.jpg::CompressedTexture2D::6823831576108074177::1779515196::1779515429::1::::<><><>0<>0<>e40f563baf383ec841fdfd3f3d79ac05<>res://.godot/imported/water-body.jpg-3662c4481e93cb36f533a86ffd5cc978.ctex::
