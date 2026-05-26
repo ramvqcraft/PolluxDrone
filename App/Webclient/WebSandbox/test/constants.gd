@@ -2,7 +2,7 @@
 extends Resource
 
 # Pollux Translation
-const MAX_SPEED : float = 1.0
+const MAX_SPEED : float = 2.0
 const ACCELERATION : float = 0.2
 const DECELERATION : float = 0.2
 
@@ -36,3 +36,8 @@ const HANDLE_LEFT_INITIAL : float = 0.0
 const HANDLE_LEFT_FINAL   : float = 90.0
 const HANDLE_RIGHT_INITIAL : float = 0.0
 const HANDLE_RIGHT_FINAL   : float = -90.0
+
+# --- Free rotation game camera ---
+const SENSITIVITY : float = 0.3
+const DISTANCE : float = 10.0
+const HEIGHT : float = 3.0

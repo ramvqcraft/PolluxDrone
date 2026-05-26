@@ -4,6 +4,7 @@
 [ext_resource type="Script" uid="uid://c5hmbpvty23bf" path="res://beach.gd" id="3_ocgqa"]
 [ext_resource type="PackedScene" uid="uid://bpywl42vdv6o4" path="res://models/Human.gltf" id="4_nk4s2"]
 [ext_resource type="PackedScene" uid="uid://h61ftno7ho0y" path="res://models/Pollux.gltf" id="5_mpcv5"]
+[ext_resource type="Script" uid="uid://b35p7s2sr2t8y" path="res://camera.gd" id="6_dako3"]
 [ext_resource type="Script" uid="uid://ccc23bl8bm0v" path="res://drone3.gd" id="6_mpcv5"]
 
 [node name="Node3D" type="Node3D" unique_id=1710347843]
@@ -22,11 +23,12 @@ transform = Transform3D(-4.371139e-08, -8.742278e-08, -1, -8.742278e-08, 1, -8.7
 [node name="CameraPivot" type="Node3D" parent="Pollux" unique_id=1295245381]
 
 [node name="Camera3D" type="Camera3D" parent="Pollux/CameraPivot" unique_id=77329415]
-transform = Transform3D(-1, 1.7484554e-07, -8.7422805e-08, 1.7484555e-07, 1, -1.7484555e-07, 8.742278e-08, -1.7484557e-07, -1, -0.42107624, 0.53060675, -1.1006584)
+transform = Transform3D(-0.0031876364, -0.73570424, 0.6772955, -0.0007789438, 0.6773006, 0.73570603, -0.99999464, 0.0018175882, -0.00273206, 2.9129496, 4.421058, 0.06903839)
+script = ExtResource("6_dako3")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1961067350]
 transform = Transform3D(2.3283067e-10, -1, -2.682207e-07, -0.008464756, -2.6821306e-07, 0.9999642, -0.9999642, 2.0376005e-09, -0.008464756, 0.012412071, 28.347412, -0.016380072)
-light_energy = 16.0
+light_energy = 5.408
 light_indirect_energy = 12.295
 light_volumetric_fog_energy = 6.895
 light_angular_distance = 5.68

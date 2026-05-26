@@ -1,2 +1,4 @@
 res://Beach.tscn
-res://beach.gd
+res://constants.gd
+res://drone3.gd
+res://camera.gd
