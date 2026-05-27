@@ -1,0 +1,64 @@
+[gd_scene format=3 uid="uid://crpv2t7ifyqfv"]
+
+[ext_resource type="Script" uid="uid://ccc23bl8bm0v" path="res://drone3.gd" id="1_twm6x"]
+[ext_resource type="PackedScene" uid="uid://cx4k5y056xst2" path="res://models/Human3.gltf" id="2_5faul"]
+[ext_resource type="Script" uid="uid://clxa22dt2ns4u" path="res://Tom.gd" id="3_0107u"]
+[ext_resource type="PackedScene" uid="uid://btd5kjlnab640" path="res://models/Bouy.gltf" id="4_dhvqg"]
+[ext_resource type="PackedScene" uid="uid://b0glc2hcocf7u" path="res://models/BeachBackground.gltf" id="5_7rwb8"]
+[ext_resource type="Script" uid="uid://c5hmbpvty23bf" path="res://beach.gd" id="6_6dm65"]
+[ext_resource type="PackedScene" uid="uid://12mfmilmclrq" path="res://models/PalmTree.gltf" id="7_1gt0s"]
+[ext_resource type="PackedScene" uid="uid://h61ftno7ho0y" path="res://models/Pollux.gltf" id="8_eugtg"]
+[ext_resource type="Script" uid="uid://b35p7s2sr2t8y" path="res://camera.gd" id="9_knnos"]
+
+[node name="Node3D" type="Node3D" unique_id=1710347843]
+script = ExtResource("1_twm6x")
+
+[node name="Tom" parent="." unique_id=1692714144 instance=ExtResource("2_5faul")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -44.765476, 4.990291, 2.4289684)
+script = ExtResource("3_0107u")
+
+[node name="Bouy" parent="." unique_id=23979941 instance=ExtResource("4_dhvqg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39.5271, 4.9126463, -0.04757881)
+
+[node name="Bouy3" parent="." unique_id=217832790 instance=ExtResource("4_dhvqg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.826157, 5.0032215, -0.14273643)
+
+[node name="Bouy2" parent="." unique_id=586171697 instance=ExtResource("4_dhvqg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.952873, 4.9712267, -0.09515762)
+
+[node name="BeachBackground" parent="." unique_id=1239726475 instance=ExtResource("5_7rwb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2760849, 0, -1.2939305)
+script = ExtResource("6_6dm65")
+
+[node name="PalmTree" parent="." unique_id=1162992187 instance=ExtResource("7_1gt0s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -77.61473, 7.1191044, 0)
+
+[node name="PalmTree2" parent="." unique_id=1797278138 instance=ExtResource("7_1gt0s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -77.30681, 7.1234293, -32.006886)
+
+[node name="PalmTree3" parent="." unique_id=1701793264 instance=ExtResource("7_1gt0s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -77.95679, 7.0932913, 31.97446)
+
+[node name="PalmTree4" parent="." unique_id=1932184663 instance=ExtResource("7_1gt0s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -77.565704, 7.1217594, -15.961632)
+
+[node name="PalmTree5" parent="." unique_id=721910987 instance=ExtResource("7_1gt0s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -77.872444, 7.1448812, 15.922531)
+
+[node name="Pollux" parent="." unique_id=47708796 instance=ExtResource("8_eugtg")]
+transform = Transform3D(-4.371139e-08, 8.742277e-08, 1, -8.742278e-08, 1, -8.742277e-08, -1, -8.742278e-08, -4.371138e-08, -48.133286, 4.9996853, 2.495661)
+
+[node name="CameraPivot" type="Node3D" parent="Pollux" unique_id=1295245381]
+
+[node name="Camera3D" type="Camera3D" parent="Pollux/CameraPivot" unique_id=77329415]
+transform = Transform3D(-0.0031876364, -0.73570424, 0.6772955, -0.0007789438, 0.6773006, 0.73570603, -0.99999464, 0.0018175882, -0.00273206, 2.9129496, 4.421058, 0.06903839)
+script = ExtResource("9_knnos")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1961067350]
+transform = Transform3D(2.3283067e-10, -1, -2.682207e-07, -0.008464756, -2.6821306e-07, 0.9999642, -0.9999642, 2.0376005e-09, -0.008464756, 0.012412071, 28.347412, -0.016380072)
+light_energy = 5.408
+light_indirect_energy = 12.295
+light_volumetric_fog_energy = 6.895
+light_angular_distance = 5.68
+light_specular = 16.0
+shadow_enabled = true

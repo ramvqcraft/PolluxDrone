@@ -41,8 +41,8 @@ func _process(delta):
 	MovementUtils.handle_propellers(main_propeller, side_propeller_1, side_propeller_2,
 								velocity, angular_velocity, delta, C)
 
-	if Input.is_action_just_pressed("ui_a"):
-		MovementUtils.FoldAkas(left_aka, right_aka, 3, C)
+	#if Input.is_action_just_pressed("ui_a"):
+	#	MovementUtils.FoldAkas(left_aka, right_aka, 3, C)
 
-	if Input.is_action_just_pressed("ui_z"):
-		MovementUtils.DeployAkas(left_aka, right_aka, 3, C)
+	#if Input.is_action_just_pressed("ui_z"):
+	#	MovementUtils.DeployAkas(left_aka, right_aka, 3, C)

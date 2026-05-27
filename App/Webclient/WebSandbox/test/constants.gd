@@ -1,6 +1,11 @@
 # constants.gd
 extends Resource
 
+# Human Translation
+const HUMAN_MAX_SPEED : float = 2.0
+const HUMAN_ACCELERATION : float = 0.5
+const HUMAN_DECELERATION : float = 0.5
+
 # Pollux Translation
 const MAX_SPEED : float = 2.0
 const ACCELERATION : float = 0.2
